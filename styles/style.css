@@ -1,0 +1,138 @@
+
+/* notes: spend some time making comments on how Flexbox and Grid are working here and
+personalize this portfolio page using google fonts, different colors, different hover and active styling, maybe a different layout or viewport response*/
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+body{
+    background-color: white;
+}
+
+header, footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    border: 1px dashed gray;
+    background-color: rgb(35, 52, 81);  
+    font-family: "Audiowide", sans-serif;
+    color:white;
+}
+
+header a:visited{
+    color:antiquewhite;
+}
+
+footer a:visited{
+    color:antiquewhite;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+main {
+    font-family: 'Times New Roman', Times, serif; /* try using a google font instead*/
+    border: 1px, solid, black;
+    /* margin: 50px; */
+}
+
+nav {
+    width: 960px;
+    height: 100px;
+}
+
+#nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+#home {
+    flex: auto;
+    padding: 20px;
+ }
+
+#nav-links li{
+    padding: 1em; /* what does em mean?*/
+}
+
+#projects-grid{
+    display: grid;
+    max-width: 960px;
+    grid-template-columns: 1fr 1fr 1fr; /* what does fr mean?*/
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px; 
+    /* background: rgba(102, 119, 59, 0.5);  play with color*/
+    
+}
+
+#page_title{
+    grid-column: 1/4;
+    text-align: center;
+    max-width: 100%;
+    padding: 40px 0px;
+}
+
+.project_item {
+    display: grid;  /* we have a grid inside a grid here, with each item as its own grid*/
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-areas:
+    "image number"
+    "image title"
+    "image description";
+    grid-column-gap: 15px;
+    align-items: center;
+    background: rgba(232, 232, 231, 0.5); /*  play with color*/
+}
+
+.project_image { 
+    grid-area: image; 
+}
+.project_number { 
+    grid-area: number; 
+}
+.project_title { 
+    grid-area: title; 
+}
+.project-description { 
+    grid-area: description; 
+}
+
+#footer-items{
+    display: flex;
+    box-sizing: border-box;
+    list-style-type: none;
+    width: 960px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-top: 1px solid black; /* again, play with this styling*/
+    margin-top: 2rem;
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 850px){ /* what is going on here?*/
+    #projects-grid{
+    grid-template-columns: 1fr 1fr;
+    }
+    
+    #page_title{
+        grid-column: 1/3;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #projects-grid{
+    grid-template-columns: 1fr;
+    }
+    
+    #page_title{
+        grid-column: 1/2;
+    }
+}

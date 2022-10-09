@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin:0 auto;
+}
+
+body{
+    background-color:rgb(255, 255, 255);
+}
+
+
+header{
+    /* background: linear-gradient(to right, rgb(27, 77, 56),rgb(35, 77, 47)); */
+    padding: 20px;
+    text-align: center;
+    /* color: rgb(58, 136, 105); */
+    }
+    
+h1{
+    color:rgb(145, 147, 146);
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+}
+
+main{
+   
+    /* margin: 80px; */
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.item{
+    margin: 20px;
+}
+
+p{
+    color: black;
+    text-align: center;
+    font-family: fantasy;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 40%;
+}
+
+.float-left{
+    float: left;
+    margin-bottom: 2px;
+    margin-right: 20px;
+}
+
+.buttons{
+    margin: 10px;
+    display: inline-block;
+    clear: both;
+    display: inline;
+}
+
+button {
+    background-color:rgb(85, 118, 100);
+    border: none ;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:dashed;
+    font-family: fantasy;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+
+button:hover{
+    background-color: rgb(102, 180, 146);
+  }
+
+a:link{
+    color:rgb(145, 147, 146);
+}
+
+a:visited{
+    color: antiquewhite;
+}
+
+
+
+footer{
+    /* margin:0 0 20px 0;   */
+    /* background: linear-gradient(to left,rgb(27, 77, 56),rgb(35, 77, 47)); */
+    padding: 20px;
+    text-align: center;
+    color: antiquewhite;
+    }
+
+
+.gallery-item{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border: 1px  dashed  black ;
+    padding: 5px; 
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    main {
+      width: 100%;
+    }
+}
