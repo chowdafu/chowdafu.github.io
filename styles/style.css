@@ -66,7 +66,7 @@ nav {
     grid-template-rows: auto;
     grid-column-gap: 10px;
     grid-row-gap: 15px; 
-    /* background: rgba(102, 119, 59, 0.5);  play with color*/
+    background: rgba(38, 47, 65, 0.5); /* play with color*/
     
 }
 
@@ -92,13 +92,24 @@ nav {
 
 .project_image { 
     grid-area: image; 
+    width: 125px;
+    height: 300px;
+    object-fit: cover;
 }
+
 .project_number { 
     grid-area: number; 
+}
+.project_number a:visited{
+    color:cadetblue;
+}
+.project_number a{
+    color: black;
 }
 .project_title { 
     grid-area: title; 
 }
+
 .project-description { 
     grid-area: description; 
 }

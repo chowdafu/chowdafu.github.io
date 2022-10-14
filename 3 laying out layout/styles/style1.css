@@ -1,6 +1,6 @@
-/* *{
+*{
     box-sizing: border-box;
-} */
+}
 
 
 .item1 { grid-area: header; }
@@ -16,33 +16,46 @@
       'menu main main main right right'
       'menu footer footer footer footer footer';
     gap: 10px;
-    background-color: rgba(231, 251, 232, 0.8);
+    /* background-color: rgba(231, 251, 232, 0.8); */
     padding: 10px;
     /* margin: 50px; */
   }
 
+  p{
+    font-size: small;
+    padding:20px;
+  }
+.item1{
+  text-align: left;
+
+}
+.project-img{
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+}
 .grid-container1 > div {
     background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
+    /* text-align: center; */
     padding: 20px 0;
     font-size: 30px;
   }
   button {
-    background-color:rgb(85, 118, 100);
+    background-color:rgb(151, 151, 151);
     border: none ;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration:dashed;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-    display: inline-block;
+    /* display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 300px; */
   }
 
 button:hover{
@@ -55,3 +68,4 @@ a:link{
 
 a:visited{
     color: antiquewhite;
+}
