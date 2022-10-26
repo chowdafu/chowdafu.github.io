@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+.form-item{
+  text-align: center;
+  margin: 10px;
+}
+
