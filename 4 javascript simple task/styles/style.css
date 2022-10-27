@@ -2,10 +2,27 @@
     box-sizing: border-box;
 }
 
-h1{
-  text-align: center;
+header{
+  background-color:#5e745a;
+  padding: 50px;
 }
 
+.flexbox{
+  display: flex;
+}
+
+h1{
+  text-align: center;
+  color:#f3c3a3;
+}
+h2{
+  text-align: center;
+  text-size-adjust: 16px;
+  color:antiquewhite
+}
+body{
+  background-color: rgb(245, 244, 227);
+}
 h3{
   text-align: center;
 }
@@ -13,5 +30,19 @@ h3{
 .form-item{
   text-align: center;
   margin: 10px;
+}
+
+footer
+{
+  background-color: rgb(219, 151, 25);
+  padding: 50px;
+
+}
+
+@media only screen and (max-width: 999px)
+.flexbox{
+    display: block;
+    width:auto;
+    text-align:center;
 }
 
