@@ -173,22 +173,22 @@
 <h3 class="question">I like to drink coke.</h3>    
 <form id="question10">
     <div class="form-item">
-        <input type="radio" class="Inaccurate" name="question10" value="0">
+        <input type="radio" id="IdontLikeCoke" name="question10" value="0">
         <label for="Inacurrate">Inacurrate</label>
     </div>
     <div class="form-item">
-        <input type="radio" class="Neutrual" name="question10" value="1" >
+        <input type="radio" id="IfeelNeutrual" name="question10" value="1" >
         <label for="Nuetrual "> Neutrual</label><br>
     </div>
     <div class="form-item">
-    <input type="radio" class="Accurate" name="question10" value="2">
+    <input type="radio" id="IlikeCoke" name="question10" value="2">
     <label for="Accurate1">Accurate</label>
     </div>
 
 
 <br>
     <div class="form-item">
-        <input type="submit" value="Submit" id="submit">
+        <button id="submit"> Submit </button>
     </div>
 </form>
     <div id = "content"></div>
@@ -198,36 +198,57 @@
 </footer>
 
     <script>
-        let score=0;
+        
 
-        function getScore(){
+            // var inaccurateNumber = document.getElementsByClassName("Inaccurate");
+            // var neutrualNumber = document.getElementsByClassName("Neutrual");
+            // var accurateNumber = document.getElementsByClassName("Accurate");
 
-            var inaccurateNumber = document.getElementsByClassName(Inaccurate)
-            var neutrualNumber = document.getElementsByClassName(Neutrual)
-            var accurateNumber = document.getElementsByClassName(Accurate)
+            // console.log(inaccurateNumber[0]);
  
-            for (let i=0 ; i<10 ; i++)
-            if (Inaccurate[i].checked){
-                score=score;
-            }
-            if (Neutrual[i].checked){
-                score+=1;
-            }
-            if (Accurate[i].checked){
-                score +=2;
-            }
-        }
+            // for (let i=0 ; i<10 ; i++)
+            // if (inaccurateNumber[i].checked){
+            //     score=score;
+            //     console.log(score);
+            // }
+            // if (neutrualNumber[i].checked){
+            //     score+=1;
+            //     console.log(score);
+            // }
+            // if (accurateNumber[i].checked){
+            //     score +=2;
+            //     console.log(score);
+            // }
+        
+            
+// let submitBtn = document.getElementById("submit");
+// submitBtn.addEventListener("click", estimateTotal);
 
-        function result(){
-            "use strict";
-            document.getElementById("question10").addEventListener('submit',estimateTotal);
 
-            function estimateTotal(score){
+// function estimateTotal(score){
+//     event.preventDefault();
+//     alert("You are dumped:)");
+// }
+   
+        let submitBtn= document.getElementById("submit");
+        submitBtn.addEventListener("click", feedback);
+
+            function feedback(){
                 event.preventDefault();
-                console('yes')
-                alert("You are fooled");
+               
+                if(document.getElementById('IdontLikeCoke').checked){
+                alert("You are the type of person who love to drink coke.")
+                }
+                if (document.getElementById('IfeelNeutrual').checked){
+        
+                alert("You are the type of person who feel neutraul to coke.")
+                }
+                else {
+                    alert("You are the type of person who hate coke. Sorry for that. ")
+                }
+
             }
-        }
+        
         
         
     </script>
