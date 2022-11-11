@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" lang="en">
+      <title>Echo Xiaoxuan Ling</title>
+      <link rel="stylesheet" href="style/style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="../5 personal webpage/parallax.js-1.5.0/parallax.js"></script>
+   </head>
+ <body>
+
+
+<header class="flex-container">
+    <h1>Echo Xiaoxuan Ling</h1>
+    
+    <p>Hello, welcome to my webpage. The webpage is my portfolio, my work sample, and part of my life.</p>
+</header>
+
+<!-- spin effect below -->
+<div id="container">
+    <div id="circle">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+        <defs>
+            <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+        </defs>
+        <circle cx="150" cy="100" r="75" fill="none"/>
+        <g>
+            <use xlink:href="#circlePath" fill="none"/>
+            <text fill="#000">
+                <textPath xlink:href="#circlePath">Presents By Echo Xiaoxuan Ling. Welcome:)</textPath>
+            </text>
+        </g>
+    </svg>
+    </div>
+    </div>
+    
+<main>
+<div class="intro" >
+<img class="float-left" src="image/headerpic.JPG" width="100%">
+</div>
+
+<div class="parallax-wrapper">
+    <div class="intervent">
+        <h1>as an visual-lover</h1>
+    </div>
+    <div class="flex-container"> 
+    <div class="parallax">
+      <h1>This header has parallax effect</h1>
+    </div>
+    <p>being a film maker since 2016</p>
+    </div>
+  </div>
+
+  <div class="parallax-window" data-parallax="scroll" data-img-src="image/headerpic.JPG"></div>
+
+    <!-- <div class="parallaxH">
+      <h2>This header has parallax effect</h2>
+    </div> -->
+
+
+<div class="works">
+    <div class="work-item"></div>
+    <div class="work-item"></div>
+    <div class="work-item"></div>
+</div>
+
+<div class="education"></div>
+
+<div class="workingExp"></div>
+
+</main>   
+
+<footer>
+    <h1>@Echo Ling</h1>
+    <p>contact me</p>
+</footer>
+   </body>
+
+</html>
+
+<script>
+    window.addEventListener('scroll', parallax);
+    $('.parallax-window').parallax({imageSrc: 'image/headerpic.JPG'});
+
+function parallax() {
+  var scrolled = window.pageYOffset;
+  var parallax = document.querySelector(".parallax");
+//   var parallaxH = document.querySelector(".parallaxH");
+  // You can adjust the 0.4 to change the speed
+	var coords = (scrolled * .2) + 'px';
+  var coords2 = (scrolled * .2) + 'px';
+  parallax.style.transform = 'translateY(' + coords + ')';
+//   parallaxH.style.transform = 'translateX(' + coords2 + ')';
+};
+</script>
