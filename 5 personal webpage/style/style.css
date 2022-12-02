@@ -9,7 +9,7 @@ body{
 
 
 header{
-    background:#EBF5EE;
+    background:#ffffff;
     padding: 50px;
     text-align: center;
     color: #8B786B;
@@ -31,7 +31,7 @@ header{
          width: 100%; 
          padding-bottom: 10%; 
          overflow: visible;         
-         background-color: #EBF5EE;
+         background-color: #ffffff;
          z-index: 3;
         }
     
@@ -114,49 +114,40 @@ main{
     /* margin: 80px; */
     margin: auto;
     overflow: auto;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
-.parallax-wrapper {
-    overflow: hidden;
-    margin-left: 50px;
-  }
-  
-.parallax  {
-    background-image: url(../image/filmmaking.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 1000px;
-    width: 500px;
+
+html, body {
+margin: 0;
+min-height: 100%;
+font-family: sans-serif;
 }
 
-.parallax{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
-
-  html, body {
-    margin: 0;
-    min-height: 100%;
-    font-family: sans-serif;
-  }
-  
-  .intervent {
-    min-height: 200px;
-    background-color: #000000;
-  }
-
-  .parallax-window {
-    min-height: 400px;
-    background: transparent;
+.intervent {
+min-height: 200px;
+background-color: #ffffff;
 }
-  
+
+.parallax-window {
+min-height: 400px;
+background: transparent;
+}
 
 
 .item{
     margin: 20px;
+}
+
+.slider .marquee span{
+    white-space: nowrap;
+    font-size: calc(30px + 7vw);
+    padding:0 1vw;
+    font-weight: 500;
+    line-height: .9;
+    text-align: center;
+    color: #ffcaca;
+    text-transform: uppercase;
 }
 
 
@@ -191,7 +182,7 @@ img{
 
 footer{
     /* margin:0 0 20px 0;   */
-    background: #000000;
+    background: #ffffff;
     padding: 20px;
     text-align: center;
     color: antiquewhite;
