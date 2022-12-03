@@ -150,6 +150,15 @@ background: transparent;
     text-transform: uppercase;
 }
 
+.slider1{
+    position: relative;
+    z-index: 1;
+    --marquee-width:100vw;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-fianl: calc(-50% + var(--offset));
+    --item-font-size:10vw;
+}
 
 
 p{
