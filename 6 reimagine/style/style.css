@@ -6,14 +6,14 @@
 body{
     background-color:rgb(255, 255, 255);
 }
-
+/* 
 .nav-item{
     display: inline-block;
-    margin-left: 230px;
+    margin-left: 150px;
     margin-top: 20px; 
     margin-bottom: 10px;
-}
-
+} */
+/* 
 .nav-container{
     border-bottom: dashed rgba(220, 220, 220, 0.6);
     background-color:rgb(255, 255, 255) ;
@@ -21,12 +21,70 @@ body{
     left:0px;
     top: 0px;
     width: 100%;
+} */
+
+.nav-container {
+    position: fixed;
+    left:0px;
+    top: 0px;
+    background-color: rgb(48, 48, 48);
+    padding: 10px;
+    width: 100%;
+}
+
+.btn {
+    padding: 6px;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    transition: 0.3s;
+    margin:30px;
+}
+
+.btn::after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    height: 5%;
+    transition: 0.3s;
+}
+
+.btn::before {
+    content: '';
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 5%;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #d6b4c5,
+        0 0 40px #d6b4c5, 0 0 50px #d6b4c5, 0 0 60px #d6b4c5, 0 0 70px #d6b4c5;
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+
+.btn:hover::before {
+    width: 100%;
 }
 
 header{
     /* background: linear-gradient(to right, rgb(27, 77, 56),rgb(35, 77, 47)); */
     padding: 20px;
     text-align: center;
+    margin-top: 120px;
     /* color: rgb(58, 136, 105); */
     }
     
@@ -77,11 +135,11 @@ img{
 }
 
 a:link{
-    color:rgb(145, 147, 146);
+    color:rgb(255, 255, 255);
 }
 
 a:visited{
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
 }
 
 iframe{
