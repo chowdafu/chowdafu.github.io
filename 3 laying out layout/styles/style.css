@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+
+.grid-h{
+ margin-top: 100px;
+}
+
+
 header{
 margin:0 0 20px 0;  
 background: linear-gradient(to right, rgb(75, 83, 75),rgb(68, 91, 72));
@@ -69,9 +75,21 @@ pre{
     grid-column: 1 / span 3;
   }
 
-  .item10{
-    grid-row: 2/4;
-  }
+.item10{
+  grid-row: 2/4;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #b8f2cd;
+}
+
+.flex-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
 
   button {
     background-color:rgb(85, 118, 100);

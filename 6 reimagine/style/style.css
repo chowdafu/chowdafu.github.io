@@ -7,6 +7,21 @@ body{
     background-color:rgb(255, 255, 255);
 }
 
+.nav-item{
+    display: inline-block;
+    margin-left: 230px;
+    margin-top: 20px; 
+    margin-bottom: 10px;
+}
+
+.nav-container{
+    border-bottom: dashed rgba(220, 220, 220, 0.6);
+    background-color:rgb(255, 255, 255) ;
+    position: fixed;
+    left:0px;
+    top: 0px;
+    width: 100%;
+}
 
 header{
     /* background: linear-gradient(to right, rgb(27, 77, 56),rgb(35, 77, 47)); */

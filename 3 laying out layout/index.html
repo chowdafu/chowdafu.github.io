@@ -16,9 +16,7 @@
 <main>
    
     
-    <h1>Grid Layout</h1>
-    <br>
-    <br>
+    <h1 class="grid-h">Grid Layout</h1>
     <p>This grid layout contains six columns and three rows, all items arranged by grid-template-areas:</p>
     <div class="grid-container1">
       <div class="item1">Header</div>
@@ -94,6 +92,32 @@
             grid-row: 2/4;
         }
       </pre>
+
+      <h1 >Flexbox Layout</h1>
+    <p>This felxbox layout contains three items:</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+      </div>
+      <pre>
+        
+        .flex-container {
+            display: flex;
+            background-color: #b8f2cd;
+          }
+          
+          .flex-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+          }
+      </pre>
+
+      <p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+      
+      <p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
 
 </main>
 <footer>
